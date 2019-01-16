@@ -34,6 +34,7 @@ function verificarFimDeJogo(){
         $("#resultado").html("<h1>" + vencedor + " venceu! </h1>");
         $(".casa").off("click");
     }
+    placar();
 }
     
     
@@ -49,4 +50,8 @@ $(".casa").click(function(){
     }
 });
 });
+
+function placar(){
+    let p = document.querySelector("#placar");
+    p.innerHTML = "Jogador 1: " +person1 + "<br>" + "Jogador 2: " + person2}
     

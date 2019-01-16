@@ -28,3 +28,8 @@ body{
     padding-left: 50px;
     margin-left: 50px;
 }
+
+.centro{
+    text-align: center;
+    margin: auto;
+}
