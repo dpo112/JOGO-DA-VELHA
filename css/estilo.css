@@ -1,9 +1,14 @@
-
+body{
+    background-color:#deb887;
+    padding-left: 50px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #jogo{
     width:603px;
     height:600px;
-    border:solid 3px
+    border:solid 1.5px;
 }
  
 .linha{
@@ -12,10 +17,14 @@
 }
  
 .casa{
+    background-color: azure;
     width:200px;
     height:100%;
     border-right:solid 1px;
     float:left;
 }
 
-
+.div{
+    padding-left: 50px;
+    margin-left: 50px;
+}
