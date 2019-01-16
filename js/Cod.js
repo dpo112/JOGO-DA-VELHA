@@ -1,3 +1,6 @@
+var person1 = prompt("Jogador 1:");
+var person2 = prompt("Jogador 2:");
+
 $(function(){
     var vez = 1;
     var vencedor = "";  
@@ -12,9 +15,9 @@ $(function(){
     var bgC = $("#casa"+c).css("background-image");
     if( (bgA == bgB) && (bgB == bgC) && (bgA != "none" && bgA != "")){
         if(bgA.indexOf("1.png") >= 0)
-            vencedor = "1";
+            vencedor = person1;
         else
-            vencedor = "2";
+            vencedor = person2;
         return true;
     }
     else{
@@ -28,7 +31,7 @@ function verificarFimDeJogo(){
         casasIguais(1, 4, 7) || casasIguais(2, 5, 8) || casasIguais(3, 6, 9) ||
         casasIguais(1, 5, 9) || casasIguais(3, 5, 7)
         ){
-        $("#resultado").html("<h1>O jogador " + vencedor + "venceu! </h1>");
+        $("#resultado").html("<h1>" + vencedor + " venceu! </h1>");
         $(".casa").off("click");
     }
 }
